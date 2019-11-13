@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4883643C237C3FAC000D3627 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883643B237C3FAC000D3627 /* FilterService.swift */; };
+		48836440237C5B9D000D3627 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4883643F237C5B9D000D3627 /* List.storyboard */; };
+		48836442237C5BE8000D3627 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48836441237C5BE8000D3627 /* TaskListViewController.swift */; };
+		48836444237C5ED1000D3627 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48836443237C5ED1000D3627 /* AddTaskViewController.swift */; };
+		48836447237C604C000D3627 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48836446237C604C000D3627 /* Task.swift */; };
 		48F6F5CD237B757600E2C84D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6F5CC237B757600E2C84D /* AppDelegate.swift */; };
 		48F6F5CF237B757600E2C84D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6F5CE237B757600E2C84D /* ViewController.swift */; };
 		48F6F5D2237B757600E2C84D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F6F5D0237B757600E2C84D /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		3B4149142C127765B5587068 /* Pods-RxSwift_.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift_/Pods-RxSwift_.debug.xcconfig"; sourceTree = "<group>"; };
 		4883643B237C3FAC000D3627 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
+		4883643F237C5B9D000D3627 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		48836441237C5BE8000D3627 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		48836443237C5ED1000D3627 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		48836446237C604C000D3627 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		48F6F5C9237B757600E2C84D /* RxSwift_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwift_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F6F5CC237B757600E2C84D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F6F5CE237B757600E2C84D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4883643D237C5B3B000D3627 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				48F6F5D0237B757600E2C84D /* Main.storyboard */,
+				48F6F5DE237B767B00E2C84D /* RxSwiftPlaygorund.playground */,
+				48F6F5CE237B757600E2C84D /* ViewController.swift */,
+				48F6F5DF237B814300E2C84D /* PhotosCollectionViewController.swift */,
+				48F6F5E1237B86C600E2C84D /* PhotoCollectionViewCell.swift */,
+				4883643B237C3FAC000D3627 /* FilterService.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		4883643E237C5B6D000D3627 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				48836445237C603D000D3627 /* Model */,
+				4883643F237C5B9D000D3627 /* List.storyboard */,
+				48836441237C5BE8000D3627 /* TaskListViewController.swift */,
+				48836443237C5ED1000D3627 /* AddTaskViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		48836445237C603D000D3627 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48836446237C604C000D3627 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		48F6F5C0237B757600E2C84D = {
 			isa = PBXGroup;
 			children = (
@@ -68,16 +108,12 @@
 		48F6F5CB237B757600E2C84D /* RxSwift_ */ = {
 			isa = PBXGroup;
 			children = (
-				48F6F5DE237B767B00E2C84D /* RxSwiftPlaygorund.playground */,
+				4883643E237C5B6D000D3627 /* List */,
+				4883643D237C5B3B000D3627 /* Filter */,
 				48F6F5CC237B757600E2C84D /* AppDelegate.swift */,
-				48F6F5CE237B757600E2C84D /* ViewController.swift */,
-				48F6F5D0237B757600E2C84D /* Main.storyboard */,
 				48F6F5D3237B757A00E2C84D /* Assets.xcassets */,
 				48F6F5D5237B757A00E2C84D /* LaunchScreen.storyboard */,
 				48F6F5D8237B757A00E2C84D /* Info.plist */,
-				48F6F5DF237B814300E2C84D /* PhotosCollectionViewController.swift */,
-				48F6F5E1237B86C600E2C84D /* PhotoCollectionViewCell.swift */,
-				4883643B237C3FAC000D3627 /* FilterService.swift */,
 			);
 			path = RxSwift_;
 			sourceTree = "<group>";
@@ -161,6 +197,7 @@
 			files = (
 				48F6F5D7237B757A00E2C84D /* LaunchScreen.storyboard in Resources */,
 				48F6F5D4237B757A00E2C84D /* Assets.xcassets in Resources */,
+				48836440237C5B9D000D3627 /* List.storyboard in Resources */,
 				48F6F5D2237B757600E2C84D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,11 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48836447237C604C000D3627 /* Task.swift in Sources */,
 				48F6F5E0237B814300E2C84D /* PhotosCollectionViewController.swift in Sources */,
 				4883643C237C3FAC000D3627 /* FilterService.swift in Sources */,
 				48F6F5E2237B86C600E2C84D /* PhotoCollectionViewCell.swift in Sources */,
+				48836442237C5BE8000D3627 /* TaskListViewController.swift in Sources */,
 				48F6F5CF237B757600E2C84D /* ViewController.swift in Sources */,
 				48F6F5CD237B757600E2C84D /* AppDelegate.swift in Sources */,
+				48836444237C5ED1000D3627 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

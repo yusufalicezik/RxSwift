@@ -33,5 +33,8 @@ subject.onNext("issue 1")
 
 subject.subscribe{ event in
     print(event)
-}
+}.disposed(by: disposeBag)
 subject.onNext("Issue 2")
+subject.onNext("Issue 3")
+subject.onCompleted()
+
