@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4883643C237C3FAC000D3627 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883643B237C3FAC000D3627 /* FilterService.swift */; };
 		48F6F5CD237B757600E2C84D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6F5CC237B757600E2C84D /* AppDelegate.swift */; };
 		48F6F5CF237B757600E2C84D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6F5CE237B757600E2C84D /* ViewController.swift */; };
 		48F6F5D2237B757600E2C84D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F6F5D0237B757600E2C84D /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		3B4149142C127765B5587068 /* Pods-RxSwift_.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift_/Pods-RxSwift_.debug.xcconfig"; sourceTree = "<group>"; };
+		4883643B237C3FAC000D3627 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		48F6F5C9237B757600E2C84D /* RxSwift_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwift_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F6F5CC237B757600E2C84D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F6F5CE237B757600E2C84D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				48F6F5D8237B757A00E2C84D /* Info.plist */,
 				48F6F5DF237B814300E2C84D /* PhotosCollectionViewController.swift */,
 				48F6F5E1237B86C600E2C84D /* PhotoCollectionViewCell.swift */,
+				4883643B237C3FAC000D3627 /* FilterService.swift */,
 			);
 			path = RxSwift_;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F6F5E0237B814300E2C84D /* PhotosCollectionViewController.swift in Sources */,
+				4883643C237C3FAC000D3627 /* FilterService.swift in Sources */,
 				48F6F5E2237B86C600E2C84D /* PhotoCollectionViewCell.swift in Sources */,
 				48F6F5CF237B757600E2C84D /* ViewController.swift in Sources */,
 				48F6F5CD237B757600E2C84D /* AppDelegate.swift in Sources */,

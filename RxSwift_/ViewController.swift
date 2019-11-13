@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 class ViewController: UIViewController {
 
+    @IBOutlet weak var applyFilterButton: UIButton!
     @IBOutlet weak var photoImageView: UIImageView!
     let disposeBg = DisposeBag()
     override func viewDidLoad() {
@@ -21,11 +22,32 @@ class ViewController: UIViewController {
         guard let navC = segue.destination as? UINavigationController,
             let photosVC = navC.viewControllers.first as? PhotosCollectionViewController else {return}
         photosVC.selectedPhoto.subscribe(onNext: {[weak self] (photo) in
-            self?.photoImageView.image = photo
+            DispatchQueue.main.async {
+                self?.updateUI(with: photo)
+            }
         }).disposed(by: disposeBg)
 
     }
 
+    private func updateUI(with image: UIImage){
+        self.photoImageView.image = image
+        self.applyFilterButton.isHidden = false
+    }
+    
+    @IBAction func applyFilterPressed(){
+        guard let sourceImage = self.photoImageView.image else {return}
+//        FilterService().applyFilter(to: sourceImage) { (image) in
+//            DispatchQueue.main.async {
+//                self.photoImageView.image = image
+//            }
+//        }
+        FilterService().applyFilter(to: sourceImage)
+            .subscribe(onNext:{ filteredImage in
+                DispatchQueue.main.async {
+                    self.photoImageView.image = filteredImage
+                }
+            }).disposed(by: disposeBg)
+    }
 
 }
 
