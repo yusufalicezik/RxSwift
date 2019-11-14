@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Dh-n1-uRE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ee5-8r-t9m">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -155,6 +155,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skA-TK-jU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="324.63768115942031" y="-70.3125"/>
+        </scene>
+        <!--Validate View Controller-->
+        <scene sceneID="XXj-Mg-2zp">
+            <objects>
+                <viewController id="Ee5-8r-t9m" customClass="ValidateViewController" customModule="RxSwift_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rrk-o8-boQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAj-xL-IJd">
+                                <rect key="frame" x="25" y="144" width="364" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qpU-4v-Hcs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E mail again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJl-P5-p3m">
+                                <rect key="frame" x="25" y="201" width="364" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dah-bZ-wD1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9v-e4-rTA">
+                                <rect key="frame" x="25" y="266" width="364" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNP-aR-Enh">
+                                <rect key="frame" x="190" y="347" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="Ee5-8r-t9m" eventType="touchUpInside" id="zum-D4-XSe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N9d-Hl-iui" firstAttribute="trailing" secondItem="gJl-P5-p3m" secondAttribute="trailing" constant="25" id="6ai-ex-mMk"/>
+                            <constraint firstItem="N9d-Hl-iui" firstAttribute="trailing" secondItem="d9v-e4-rTA" secondAttribute="trailing" constant="25" id="C5v-k4-eXo"/>
+                            <constraint firstItem="gJl-P5-p3m" firstAttribute="top" secondItem="eAj-xL-IJd" secondAttribute="bottom" constant="17" id="DTL-mf-UOM"/>
+                            <constraint firstItem="d9v-e4-rTA" firstAttribute="leading" secondItem="N9d-Hl-iui" secondAttribute="leading" constant="25" id="Dnd-BI-TMC"/>
+                            <constraint firstItem="eAj-xL-IJd" firstAttribute="top" secondItem="N9d-Hl-iui" secondAttribute="top" constant="100" id="HHS-T2-Hn7"/>
+                            <constraint firstItem="fNP-aR-Enh" firstAttribute="centerX" secondItem="rrk-o8-boQ" secondAttribute="centerX" id="Sqx-yg-na4"/>
+                            <constraint firstItem="N9d-Hl-iui" firstAttribute="trailing" secondItem="eAj-xL-IJd" secondAttribute="trailing" constant="25" id="add-7J-dIe"/>
+                            <constraint firstItem="eAj-xL-IJd" firstAttribute="leading" secondItem="N9d-Hl-iui" secondAttribute="leading" constant="25" id="csF-52-FNb"/>
+                            <constraint firstItem="gJl-P5-p3m" firstAttribute="leading" secondItem="N9d-Hl-iui" secondAttribute="leading" constant="25" id="pR7-fH-1Gi"/>
+                            <constraint firstItem="d9v-e4-rTA" firstAttribute="top" secondItem="gJl-P5-p3m" secondAttribute="bottom" constant="25" id="rwJ-TB-Jr7"/>
+                            <constraint firstItem="fNP-aR-Enh" firstAttribute="top" secondItem="d9v-e4-rTA" secondAttribute="bottom" constant="60" id="soN-VM-HQo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N9d-Hl-iui"/>
+                    </view>
+                    <connections>
+                        <outlet property="eMailAgainTxtField" destination="gJl-P5-p3m" id="IKj-ca-tTn"/>
+                        <outlet property="eMailTxtField" destination="eAj-xL-IJd" id="tCW-Qs-bpG"/>
+                        <outlet property="messageLabel" destination="d9v-e4-rTA" id="dVg-iQ-PSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r30-Pb-j7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="584"/>
+        </scene>
+        <!--Validate Second View Controller-->
+        <scene sceneID="jnu-Ie-Wx0">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="H2P-Yw-14T" customClass="ValidateSecondViewController" customModule="RxSwift_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HXk-Ki-lxW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YdF-pj-0ta"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7i-xp-GCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zDj-X5-5eq">
